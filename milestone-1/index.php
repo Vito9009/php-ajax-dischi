@@ -83,6 +83,13 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="https://cantabrialabsdifacooper.it/wp-content/uploads/2021/03/png-clipart-spotify-logo-spotify-computer-icons-podcast-music-apps-miscellaneous-angle-1-e1614848134495-300x300.png" alt="">
+            </div>
+        </div>
+    </header>
     <main>
         <?php
             foreach($dischi as $infoDischi) {

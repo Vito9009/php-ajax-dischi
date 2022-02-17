@@ -5,6 +5,10 @@
     font-size: 12px;
 }
 
+body{
+    background-color: rgb(30, 45, 59);
+}
+
 main{
     width: 75%;
     margin: 0 auto;
@@ -19,18 +23,41 @@ main{
     text-align: center;
     background-color: rgb(46, 58, 70);
 }    
-h3{
+
+.disc-container h3{
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 20px
         
 }
-h4{
+
+.disc-container h4{
         color: rgb(128, 128, 128);
     }
 
-img{
+.disc-container img{
     width: 100%;
     margin-bottom: 20px;
 }
+
+.header-container{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(46, 58, 70);
+    display: flex;
+    align-items: center;
+}
+    
+.header-container .logo-container{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container .logo-container img{
+    width: 60px;
+}
+
