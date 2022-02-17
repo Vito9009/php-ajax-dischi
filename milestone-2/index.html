@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="header-container">
+                <div class="logo-container">
+                    <img src="https://cantabrialabsdifacooper.it/wp-content/uploads/2021/03/png-clipart-spotify-logo-spotify-computer-icons-podcast-music-apps-miscellaneous-angle-1-e1614848134495-300x300.png" alt="">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="disc-container"
+            v-for="(element, index) in mydatabase"
+            :key="index"
+            >
+                <img :src="element.poster" :alt="element.title">
+                <h3>{{element.title}}</h3>
+                <h4>{{element.author}}</h4>
+                <h4>{{element.year}}</h4>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+</html>
